@@ -16,3 +16,19 @@ h1 {
     /* text-shadow: black 0px 0px 5px; */
     /* -webkit-text-stroke: black solid 4px; */
 }
+button {
+    width: 25%;
+    height: 70px;
+    margin: 35px auto 0 auto;
+    background-color: rgb(177, 177, 177);
+    font-size: 36px;
+    border: black solid 3px;
+    border-radius: 6px;
+    box-shadow: black 7px 7px 10px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url('Project 2 BG.jpg');
+    justify-content: space-evenly;
+}
