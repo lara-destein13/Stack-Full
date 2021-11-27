@@ -22,9 +22,9 @@ h1 {
 button {
     width: 25%;
     height: 70px;
-    /* margin: 35px auto 0 auto; */
-    margin-left: auto;
-    margin-right: auto;
+    margin: 35px auto 0 auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     background-color: rgb(177, 177, 177);
     font-size: 36px;
     border: black solid 3px;
