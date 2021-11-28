@@ -1,0 +1,82 @@
+/* #client-list table {
+  background-color: #748b97;
+  border: black solid 4px;
+  border-radius: 6px;
+} */
+/* C:\Users\Ben\Desktop\_Coding BootCamp\_weeks lessons\_project 2 ideas\Full-Stack-Project\Stack-Full\public\client-list.css */
+body {
+  display: flex;
+  flex-direction: column;
+}
+.clientsTable {
+  margin: 35px auto 0 auto;
+  width: 80%;
+  height: 350px;
+  background-color: #748b97;
+  border: black solid 4px;
+  border-radius: 6px;
+  /* display: inline; */
+}
+.clientData {
+  margin-top: 10px;
+}
+.info {
+  font-size: 30px;
+  border-bottom: solid rgb(0, 0, 0) 4px;
+}
+.clientFirst, .clientLast, .clientPostal, .clientPhone, .clientEmail {
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  margin-top: 10%;
+  /* border-bottom: solid black 4px; */
+  /* padding: 5px; */
+  /* border-right: solid rgb(41, 41, 41) 4px; */
+  
+}
+/* .clientData {
+  border-bottom: solid black 4px;
+} */
+.editBTN {
+  /* margin: 0 75px 0 0; */
+  width: 150px;
+  height: 70px;
+  font-size: 24px;
+  border: black solid 3px;
+  border-radius: 5px;
+  background-color: rgb(144, 144, 144);
+}
+.editBTN:hover {
+  background-color: lightgray;
+}
+.deleteBTN {
+  width: 70px;
+  height: 70px;
+  font-size: 12px;
+  border: black solid 3px;
+  border-radius: 5px;
+  background-color: rgb(144, 144, 144);
+}
+.deleteBTN:hover {
+  background-color: lightgray;
+}
+.editCell {
+  margin: 0 auto 0 auto;
+}
+.addBTN {
+  width: 250px;
+  height: 85px;
+  font-size: 40px;
+  border: black solid 3px;
+  border-radius: 5px;
+  background-color: rgb(144, 144, 144);
+  margin-left: 40%;
+  margin-right: 40%;
+  position: relative;
+}
+.addBTN:hover {
+  background-color: lightgray;
+}
+/* .clientData {
+  margin: 10 auto 0 auto;
+} */
