@@ -25,7 +25,7 @@ h1 {
     flex-direction: column;
 }
 body {
-    background-image: url('./Full-Stack-Project/Stack-Full/Project 2 BG.jpg');
+    background-image: url('Project 2 BG.jpg');
     /* justify-content: space-evenly; */
 }
 #userName {
