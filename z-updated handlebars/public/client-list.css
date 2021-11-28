@@ -82,6 +82,7 @@ body {
   margin-left: 40%;
   margin-right: 40%;
   position: relative;
+  box-shadow: black 7px 7px 10px;
 }
 .addBTN:hover {
   background-color: lightgray;
