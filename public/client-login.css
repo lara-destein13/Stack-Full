@@ -1,6 +1,6 @@
-#client-add table {
+/* #client-add table {
     background-color: lightblue;
-}
+} */
 h1 {
     display: flex;
     flex-direction: column;

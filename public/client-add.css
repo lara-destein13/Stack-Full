@@ -9,7 +9,6 @@ body {
 tbody {
   align-items: center;
   height: 300px;
-  background-color: white;
 }
 
 #client-add {
@@ -21,23 +20,34 @@ tbody {
 }
 
 #client-add table {
+  margin-bottom: 10px;
   background-color: #748b97;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 tr {
   margin: 60px;
   background-color: #748b97;
   padding: 30px;
-  border: 1px solid black;
-  border-radius: 5px;
 }
 
 td {
   background-color: #748b97;
+  padding: 15px;
+}
+
+td input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 2px;
 }
 
 .firstName, .lastName, .postalCode, .email, .phone {
   color: white;
+  font-size: 35px;
 }
 
 /*.clientList h2 {
@@ -105,11 +115,13 @@ td {
   color: white;
   background-color: darkgrey;
   border: 1px solid black;
+  border-radius: 5px;
   padding: 10px;
   border-radius: 2px;
   text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   height: 40px;
   width: 65px;
+
 }
 
 .saveBtn:hover {
