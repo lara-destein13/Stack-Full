@@ -1,11 +1,7 @@
 <script src="client-list.js"></script>
 <link rel='stylesheet' type= href='.\Full-Stack-Project\Stack-Full\public\client-list.css'>
 <h1>Client List Page</h1>
-<<<<<<< HEAD
-
-=======
 {{!--  --}}
->>>>>>> 22acd08b26dd16bb6dd27f94aa77de93825d6937
 <div id="client-list">
     <button class='addBTN' onclick="addButtonClicked({{@index}})">Add Client</button>
     <table class='clientsTable'>
@@ -15,11 +11,16 @@
                 <th class='info'>Last Name</th>
                 <th class='info'>Postal Code</th>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 <th class='info'>eMail Address</th>
+=======
+                <th class='info'>E-Mail Address</th>
+>>>>>>> 9785452685bf09dd4f94f1087c86b25db35ca464
                 <th class='info'>Phone Number</th>
 >>>>>>> 22acd08b26dd16bb6dd27f94aa77de93825d6937
                 <th class='info'>Actions</th>
+                <th class='info'></th>
             </tr>
         </thead>
         <tbody  >
@@ -34,6 +35,8 @@
                     <td class='clientPhone'>{{client.phone}}</td>
 >>>>>>> 22acd08b26dd16bb6dd27f94aa77de93825d6937
                     <td class='editCell'><button class='editBTN' onclick="editButtonClicked({{@index}})">Edit</button></td>
+                    <td class='deleteCell'><button class='deleteBTN' onclick="deleteButtonClicked({{@index}})">DELETE</button></td>
+                    </td>
                 </tr>
             {{/each}}
         </tbody>

@@ -7,10 +7,11 @@
 body {
   display: flex;
   flex-direction: column;
+  background-image: url('./Stack-Full/public/graphics/Project 2 BG.jpg')
 }
 .clientsTable {
   margin: 35px auto 0 auto;
-  width: 60%;
+  width: 80%;
   height: 350px;
   background-color: #748b97;
   border: black solid 4px;
@@ -22,9 +23,9 @@ body {
 }
 .info {
   font-size: 40px;
-  border-bottom: solid rgb(41, 41, 41) 4px;
+  border-bottom: solid rgb(0, 0, 0) 4px;
 }
-.clientFirst, .clientLast, .clientPostal {
+.clientFirst, .clientLast, .clientPostal, .clientPhone, .clientEmail {
   text-align: center;
   font-size: 40px;
   position: relative;
@@ -40,24 +41,36 @@ body {
   /* margin: 0 75px 0 0; */
   width: 150px;
   height: 70px;
-  font-size: 24px;
+  font-size: 30px;
   border: black solid 3px;
   border-radius: 5px;
-  background-color: rgb(187, 187, 187);
+  background-color: rgb(141, 141, 141);
 }
 .editBTN:hover {
   background-color: lightgray;
 }
-.editCell {
-  margin: 0 auto 0 auto;
+.deleteBTN {
+  width: 70px;
+  height: 70px;
+  /* background-image: url('./Full-Stack-Project/Stack-Full/public/graphics/trashcan.png'); */
+  border: black solid 3px;
+  border-radius: 5px;
+  background-color: rgb(141, 141, 141);
+  font-size: 12px;
 }
+.deleteBTN:hover {
+  background-color: lightgray;
+}
+/* .editCell {
+  margin: 0 auto 0 auto;
+} */
 .addBTN {
   width: 250px;
   height: 85px;
   font-size: 40px;
   border: black solid 3px;
   border-radius: 5px;
-  background-color: rgb(187, 187, 187);
+  background-color: rgb(141, 141, 141);
   margin-left: 40%;
   margin-right: 40%;
   position: relative;
@@ -65,6 +78,10 @@ body {
 .addBTN:hover {
   background-color: lightgray;
 }
+/* .actionBTNs {
+  display: flex;
+  flex-direction: row;
+} */
 /* .clientData {
   margin: 10 auto 0 auto;
 } */
