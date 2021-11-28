@@ -22,15 +22,9 @@ body {
 }
 .info {
   font-size: 40px;
-<<<<<<< HEAD
-  border-bottom: solid rgb(41, 41, 41) 4px;
-}
-.clientFirst, .clientLast, .clientPostal {
-=======
   border-bottom: solid rgb(0, 0, 0) 4px;
 }
 .clientFirst, .clientLast, .clientPostal, .clientPhone, .clientEmail {
->>>>>>> 22acd08b26dd16bb6dd27f94aa77de93825d6937
   text-align: center;
   font-size: 40px;
   position: relative;
@@ -49,11 +43,7 @@ body {
   font-size: 24px;
   border: black solid 3px;
   border-radius: 5px;
-<<<<<<< HEAD
-  background-color: rgb(187, 187, 187);
-=======
   background-color: rgb(141, 141, 141);
->>>>>>> 22acd08b26dd16bb6dd27f94aa77de93825d6937
 }
 .editBTN:hover {
   background-color: lightgray;
@@ -67,11 +57,7 @@ body {
   font-size: 40px;
   border: black solid 3px;
   border-radius: 5px;
-<<<<<<< HEAD
-  background-color: rgb(187, 187, 187);
-=======
   background-color: rgb(141, 141, 141);
->>>>>>> 22acd08b26dd16bb6dd27f94aa77de93825d6937
   margin-left: 40%;
   margin-right: 40%;
   position: relative;
