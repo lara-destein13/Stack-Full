@@ -26,6 +26,7 @@ h1 {
 }
 body {
     background-image: url('Project 2 BG.jpg');
+    background-size: cover;
     /* justify-content: space-evenly; */
 }
 #userName {
