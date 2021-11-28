@@ -2,21 +2,30 @@
     background-color: lightblue;
 }
 h1 {
+    display: flex;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    /* margin-top: 20px; */
     text-align: center;
-    font-size: 8rem;
+    font-size: 3rem;
     color: white;
     background-color: #748b97;
+    height: 60px;
     width: 65%;
-    border: solid black 5px;
-    border-radius: 15px;
+    border: solid black 4px;
+    border-radius: 8px;
     box-shadow: black 7px 7px 10px;
     /* text-shadow: black 0px 0px 5px; */
     /* -webkit-text-stroke: black solid 4px; */
 }
-button {
+
+
+body {
+    background-image: url('Project 2 BG.jpg');
+    /* justify-content: space-evenly; */
+}
+.submitBTN .skipBTN{
     width: 25%;
     height: 70px;
     margin: 35px auto 0 auto;
@@ -25,10 +34,4 @@ button {
     border: black solid 3px;
     border-radius: 6px;
     box-shadow: black 7px 7px 10px;
-}
-body {
-    display: flex;
-    flex-direction: column;
-    background-image: url('Project 2 BG.jpg');
-    justify-content: space-evenly;
 }
