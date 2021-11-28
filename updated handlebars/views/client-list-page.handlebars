@@ -10,7 +10,10 @@
                 <th class='info'>First Name</th>
                 <th class='info'>Last Name</th>
                 <th class='info'>Postal Code</th>
+                <th class='info'>E-Mail</th>
+                <th class='info'>Phone Number</th>
                 <th class='info'>Actions</th>
+                <th class='info'></th>
             </tr>
         </thead>
         <tbody  >
@@ -19,6 +22,8 @@
                     <td class='clientFirst'>{{client.firstName}}</td>
                     <td class='clientLast'>{{client.lastName}}</td>
                     <td class='clientPostal'>{{client.postalCode}}</td>
+                    <td class='clientEmail'>{{client.email}}</td>
+                    <td class='clientPhone'>{{client.phone}}</td>
                     <td class='editCell'><button class='editBTN' onclick="editButtonClicked({{@index}})">Edit</button></td>
                 </tr>
             {{/each}}
