@@ -10,7 +10,7 @@ body {
 }
 .clientsTable {
   margin: 35px auto 0 auto;
-  width: 60%;
+  width: 80%;
   height: 350px;
   background-color: #748b97;
   border: black solid 4px;
@@ -21,13 +21,14 @@ body {
   margin-top: 10px;
 }
 .info {
-  font-size: 40px;
-  border-bottom: solid rgb(41, 41, 41) 4px;
+  font-size: 30px;
+  border-bottom: solid rgb(0, 0, 0) 4px;
 }
 .clientFirst, .clientLast, .clientPostal, .clientPhone, .clientEmail {
   text-align: center;
   font-size: 40px;
   position: relative;
+  margin-top: 10%;
   /* border-bottom: solid black 4px; */
   /* padding: 5px; */
   /* border-right: solid rgb(41, 41, 41) 4px; */
@@ -43,7 +44,7 @@ body {
   font-size: 24px;
   border: black solid 3px;
   border-radius: 5px;
-  background-color: rgb(187, 187, 187);
+  background-color: rgb(144, 144, 144);
 }
 .editBTN:hover {
   background-color: lightgray;
@@ -54,7 +55,10 @@ body {
   font-size: 12px;
   border: black solid 3px;
   border-radius: 5px;
-  background-color: rgb(187, 187, 187);
+  background-color: rgb(144, 144, 144);
+}
+.deleteBTN:hover {
+  background-color: lightgray;
 }
 .editCell {
   margin: 0 auto 0 auto;
@@ -65,7 +69,7 @@ body {
   font-size: 40px;
   border: black solid 3px;
   border-radius: 5px;
-  background-color: rgb(187, 187, 187);
+  background-color: rgb(144, 144, 144);
   margin-left: 40%;
   margin-right: 40%;
   position: relative;

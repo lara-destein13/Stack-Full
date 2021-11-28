@@ -1,28 +1,35 @@
 <script src="client-list.js"></script>
-
+<link rel='stylesheet' type= href='.\Stack-Full\updated handlebars\public\client-list.css'>
 <h1>Client List Page</h1>
 
 <div id="client-list">
-    <table>
+    <button class='addBTN' onclick="addButtonClicked({{@index}})">Add Client</button>
+    <table class='clientsTable'>
         <thead>
             <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Postal Code</th>
-                <th>Actions</th>
+                <th class='info'>First Name</th>
+                <th class='info'>Last Name</th>
+                <th class='info'>Postal Code</th>
+                <th class='info'>E-Mail</th>
+                <th class='info'>Phone Number</th>
+                <th class='info'>Actions</th>
+                <th class='info'></th>
             </tr>
         </thead>
-        <tbody>
+        <tbody  >
             {{#each clients as | client |}}
-                <tr>
-                    <td>{{client.firstName}}</td>
-                    <td>{{client.lastName}}</td>
-                    <td>{{client.postalCode}}</td>
-                    <td><button onclick="editButtonClicked({{@index}})">Edit</button></td>
+                <tr class ='clientData'>
+                    <td class='clientFirst'>{{client.firstName}}</td>
+                    <td class='clientLast'>{{client.lastName}}</td>
+                    <td class='clientPostal'>{{client.postalCode}}</td>
+                    <td class='clientEmail'>{{client.email}}</td>
+                    <td class='clientPhone'>{{client.phone}}</td>
+                    <td class='editCell'><button class='editBTN' onclick="editButtonClicked({{@index}})">Edit</button></td>
+                    <td class='deleteCell'><button class='deleteBTN' onclick="editButtonClicked({{@index}})">Delete</button></td>
                 </tr>
             {{/each}}
         </tbody>
     </table>
-    <button onclick="addButtonClicked({{@index}})">Add Client</button>
+    
 </div>
 
