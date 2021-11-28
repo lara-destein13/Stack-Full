@@ -1,0 +1,29 @@
+<script src="client-list.js"></script>
+<link rel='stylesheet' type= href='.\Full-Stack-Project\Stack-Full\public\client-list.css'>
+<h1>Client List Page</h1>
+
+<div id="client-list">
+    <button class='addBTN' onclick="addButtonClicked({{@index}})">Add Client</button>
+    <table class='clientsTable'>
+        <thead>
+            <tr>
+                <th class='info'>First Name</th>
+                <th class='info'>Last Name</th>
+                <th class='info'>Postal Code</th>
+                <th class='info'>Actions</th>
+            </tr>
+        </thead>
+        <tbody  >
+            {{#each clients as | client |}}
+                <tr class ='clientData'>
+                    <td class='clientFirst'>{{client.firstName}}</td>
+                    <td class='clientLast'>{{client.lastName}}</td>
+                    <td class='clientPostal'>{{client.postalCode}}</td>
+                    <td class='editCell'><button class='editBTN' onclick="editButtonClicked({{@index}})">Edit</button></td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    
+</div>
+
