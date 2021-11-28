@@ -2,15 +2,11 @@ async function saveButtonClicked() {
   const firstName = document.getElementById('add-first-name').value;
   const lastName = document.getElementById('add-last-name').value;
   const postalCode = document.getElementById('add-postal-code').value;
-  const email = document.getElementById('add-email').value;
-  const phoneNumber = document.getElementById('add-phone').value;
 
   const body = {
     firstName,
     lastName,
     postalCode,
-    email,
-    phoneNumber
   };
 
   const url = 'http://localhost:3000/client-save';
@@ -33,3 +29,4 @@ async function saveButtonClicked() {
 function cancelButtonClicked() {
   window.location='/client-list-page';
 }
+
