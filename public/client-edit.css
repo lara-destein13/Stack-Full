@@ -1,3 +1,129 @@
-#client-edit table {
+/* #client-edit table {
   background-color: pink;
+} */
+
+tbody {
+  align-items: center;
+  height: 300px;
+}
+
+#client-edit {
+  /* width: 100%;*/
+  /* margin: 100px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#client-edit table {
+  margin-bottom: 10px;
+  background-color: #748b97;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+tr {
+  margin: 60px;
+  background-color: #748b97;
+  padding: 30px;
+}
+
+td {
+  background-color: #748b97;
+  padding: 15px;
+}
+
+td input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.firstName, .lastName, .postalCode, .email, .phone {
+  color: white;
+  font-size: 35px;
+}
+
+/*.clientList h2 {
+  border-bottom: 3px solid;
+  text-align: center;
+}
+.clientUL ul{
+  list-style: none;
+}
+
+.clientUL li{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: black;
+  background-color: lightgrey;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 2px;
+  list-style: none;
+} 
+
+.clientList li:hover {
+  color: white;
+  background-color: darkgrey;
+}
+
+.addClient {
+  margin: 60px;
+  width: 400px;
+  height: 245px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #748b97;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+  text-align: center;
+}
+
+.addClient h2 {
+  margin-bottom: 5px;
+  border-bottom: 3px solid;
+  text-align: center;
+}
+
+.addClient div input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 2px;
+} */
+
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.saveBtn, .cancelBtn {
+  align-items: center;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  color: white;
+  background-color: darkgrey;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  border-radius: 2px;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  height: 40px;
+  width: 65px;
+
+}
+
+.saveBtn:hover {
+  background-color:#748b97;
+}
+
+.cancelBtn:hover {
+  background-color:#748b97;
 }
