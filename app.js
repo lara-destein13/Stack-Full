@@ -112,7 +112,7 @@ class WebServer {
   // loginPage
   //------------------------------------------------------------------------------------------------
   loginPage(req, res) {
-    const context = {};
+    const context = {layout:false};
     res.render('login-page', context);
   }
 }

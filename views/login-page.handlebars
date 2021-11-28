@@ -1,7 +1,11 @@
 <script src="login.js"></script>
-
+<link rel = 'stylesheet' href = '.\Stack-Full\public\client-login.css'>
 <h1>Login Page</h1>
 
-<h2>Login form goes here</h2>
-
-<button onclick="skipButtonClicked()">Skip</button>
+{{!-- <h2>Login form goes here</h2> --}}
+<div class='inputForm'>
+    <input type="text" id="userName" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button class="submitBTN" id="submitBTN">Submit</button>
+    <button class = 'skipBTN' onclick="skipButtonClicked()">Skip</button>
+</div>

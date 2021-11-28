@@ -1,19 +1,70 @@
-#client-list table {
-  background-color: yellow;
+/* #client-list table {
+  background-color: #748b97;
+  border: black solid 4px;
+  border-radius: 6px;
+} */
+/* C:\Users\Ben\Desktop\_Coding BootCamp\_weeks lessons\_project 2 ideas\Full-Stack-Project\Stack-Full\public\client-list.css */
+body {
+  display: flex;
+  flex-direction: column;
 }
-td {
-  font-size: 24px;
+.clientsTable {
+  margin: 35px auto 0 auto;
+  width: 60%;
+  height: 350px;
+  background-color: #748b97;
+  border: black solid 4px;
+  border-radius: 6px;
+  /* display: inline; */
 }
-td button {
+.clientData {
+  margin-top: 10px;
+}
+.info {
+  font-size: 40px;
+  border-bottom: solid rgb(41, 41, 41) 4px;
+}
+.clientFirst, .clientLast, .clientPostal {
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  /* border-bottom: solid black 4px; */
+  /* padding: 5px; */
+  /* border-right: solid rgb(41, 41, 41) 4px; */
   
-  width: 25%;
-    height: 70px;
-    /* margin: 35px auto 0 auto; */
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgb(177, 177, 177);
-    font-size: 36px;
-    border: black solid 3px;
-    border-radius: 6px;
-    box-shadow: black 7px 7px 10px;
 }
+/* .clientData {
+  border-bottom: solid black 4px;
+} */
+.editBTN {
+  /* margin: 0 75px 0 0; */
+  width: 150px;
+  height: 70px;
+  font-size: 24px;
+  border: black solid 3px;
+  border-radius: 5px;
+  background-color: rgb(187, 187, 187);
+}
+.editBTN:hover {
+  background-color: lightgray;
+}
+.editCell {
+  margin: 0 auto 0 auto;
+}
+.addBTN {
+  width: 250px;
+  height: 85px;
+  font-size: 40px;
+  border: black solid 3px;
+  border-radius: 5px;
+  background-color: rgb(187, 187, 187);
+  margin-left: 40%;
+  margin-right: 40%;
+  position: relative;
+}
+.addBTN:hover {
+  background-color: lightgray;
+}
+/* .clientData {
+  margin: 10 auto 0 auto;
+} */
