@@ -48,6 +48,14 @@ body {
 .editBTN:hover {
   background-color: lightgray;
 }
+.deleteBTN {
+  width: 70px;
+  height: 70px;
+  font-size: 12px;
+  border: black solid 3px;
+  border-radius: 5px;
+  background-color: rgb(187, 187, 187);
+}
 .editCell {
   margin: 0 auto 0 auto;
 }
