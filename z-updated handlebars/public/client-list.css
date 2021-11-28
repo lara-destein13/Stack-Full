@@ -15,6 +15,7 @@ body {
   background-color: #748b97;
   border: black solid 4px;
   border-radius: 6px;
+  box-shadow: black 7px 7px 10px;
   /* display: inline; */
 }
 .clientData {
@@ -23,12 +24,14 @@ body {
 .info {
   font-size: 30px;
   border-bottom: solid rgb(0, 0, 0) 4px;
+  color:black;
 }
 .clientFirst, .clientLast, .clientPostal {
   text-align: center;
   font-size: 40px;
   position: relative;
   margin-top: 10%;
+  color:black;
   /* border-bottom: solid black 4px; */
   /* padding: 5px; */
   /* border-right: solid rgb(41, 41, 41) 4px; */
@@ -38,6 +41,7 @@ body {
   text-align: center;
   font-size: 25px;
   position: relative;
+  color:black;
 }
 /* .clientData {
   border-bottom: solid black 4px;
@@ -78,6 +82,7 @@ body {
   margin-left: 40%;
   margin-right: 40%;
   position: relative;
+  box-shadow: black 7px 7px 10px;
 }
 .addBTN:hover {
   background-color: lightgray;
