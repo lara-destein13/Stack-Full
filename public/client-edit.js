@@ -3,14 +3,14 @@ async function saveButtonClicked() {
   const lastName = document.getElementById('add-last-name').value;
   const postalCode = document.getElementById('add-postal-code').value;
   const email = document.getElementById('add-email').value;
-  const phoneNumber = document.getElementById('add-phone').value;
+  const phone = document.getElementById('add-phone').value;
 
   const body = {
     firstName,
     lastName,
     postalCode,
     email,
-    phoneNumber
+    phone
   };
 
   const url = 'http://localhost:3000/client-save';

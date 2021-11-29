@@ -21,11 +21,15 @@ class WebServer {
         firstName: 'Lara',
         lastName: 'DeStein',
         postalCode: '37774',
+        email: 'laraemail@email.com',
+        phone: '(787) 656-7878'
       },
       {
         firstName: 'Luna',
         lastName: 'DeStein',
         postalCode: '37774',
+        email: 'lunaemail@email.com',
+        phone: '(787) 656-7879'
       },
     ];
 
