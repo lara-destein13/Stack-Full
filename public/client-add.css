@@ -122,6 +122,7 @@ td input {
   text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   height: 40px;
   width: 65px;
+  font-size: 13px;
 }
 
 .saveBtn:hover {
