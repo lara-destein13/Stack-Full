@@ -26,7 +26,7 @@ body {
   border-bottom: solid rgb(0, 0, 0) 4px;
   color:black;
 }
-.clientFirst, .clientLast, .clientPostal, .clientPhone, .clientEmail{
+.clientId, .clientFirst, .clientLast, .clientPostal, .clientPhone, .clientEmail{
   text-align: center;
   font-size: 25px;
   position: relative;
