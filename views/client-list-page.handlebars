@@ -7,6 +7,7 @@
     <table class='clientsTable'>
         <thead>
             <tr>
+                <th class='info'>Id</th>
                 <th class='info'>First Name</th>
                 <th class='info'>Last Name</th>
                 <th class='info'>Postal Code</th>
@@ -19,6 +20,7 @@
         <tbody  >
             {{#each clients as | client |}}
                 <tr class ='clientData'>
+                    <td class='clientId'>{{client.id}}</td>
                     <td class='clientFirst'>{{client.firstName}}</td>
                     <td class='clientLast'>{{client.lastName}}</td>
                     <td class='clientPostal'>{{client.postalCode}}</td>

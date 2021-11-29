@@ -15,24 +15,14 @@ class WebServer {
     // Some constants
     this.port = 3000;
 
-    // The context
-    this.clients = [
-      {
-        firstName: 'Lara',
-        lastName: 'DeStein',
-        postalCode: '37774',
-        email: 'laraemail@email.com',
-        phone: '(787) 656-7878'
-      },
-      {
-        firstName: 'Luna',
-        lastName: 'DeStein',
-        postalCode: '37774',
-        email: 'lunaemail@email.com',
-        phone: '(787) 656-7879'
-      },
-    ];
+    // Each client is assigned a unique id
+    this.nextid = 0;
 
+    // Create a couple clients so we have something to look at in the clients page
+    this.clients = []; 
+    this.newClient('Lara', 'DeStein', '37774', 'laraemail@email.com', '(787) 656-7878'); 
+    this.newClient('Luna', 'DeStein', '37774', 'lunaemail@email.com', '(787) 656-7879'); 
+    
     // Create our Express app
     this.app = express();
     this.app.use(bodyParser.urlencoded({ extended: true }));
@@ -90,10 +80,28 @@ class WebServer {
   // clientListPage
   //------------------------------------------------------------------------------------------------
   clientListPage(req, res) {
+    console.log(JSON.stringify(this.clients, null, 4));
     const context = {
       clients: this.clients,
     }
     res.render('client-list-page', context);
+  }
+
+//------------------------------------------------------------------------------------------------
+  // newClient
+  //------------------------------------------------------------------------------------------------
+  newClient(firstName, lastName, postalCode, email, phone) {
+    var newClient = {
+      firstName,
+      lastName,
+      postalCode,
+      email,
+      phone,
+      id: this.nextid,
+    };
+    
+    this.nextid += 1;
+    this.clients.push(newClient);
   }
 
   //------------------------------------------------------------------------------------------------
@@ -107,9 +115,10 @@ class WebServer {
   // clientSave
   //------------------------------------------------------------------------------------------------
   clientSave(req, res) {
-    this.clients.push(req.body);
-    // res.redirect('client-list-page');
-    // res.sendStatus(200);
+    var newClient = req.body;
+    newClient.id = this.nextid;
+    this.nextid += 1;
+    this.clients.push(newClient);
     res.json({ foo: 'bar' });
   }
 
