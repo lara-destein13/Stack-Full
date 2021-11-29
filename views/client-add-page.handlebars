@@ -1,4 +1,4 @@
-<script src="client-add.js"></script>
+<body>
 
 <h1>Client Add Page</h1>
 
@@ -8,19 +8,33 @@
     <table>
         <tbody>
             <tr>
-                <td>First Name</td>
-                <td><input type="text" id="add-first-name" form="add_form"></input></td>
+                <td class="firstName">First Name:</td>
+                <td><input type="text" id="add-first-name" form="add_form" placeholder="Enter First Name"></input></td>
             </tr>
             <tr>
-                <td>Last Name</td>
-                <td><input type="text" id="add-last-name" form="add_form"></input></td>
+                <td class="lastName">Last Name:</td>
+                <td><input type="text" id="add-last-name" form="add_form" placeholder="Enter Last Name"></input></td>
             </tr>
             <tr>
-                <td>Postal Code</td>
-                <td><input type="text" id="add-postal-code" form="add_form"></input></td>
+                <td class="postalCode">Postal Code:</td>
+                <td><input type="text" id="add-postal-code" form="add_form" placeholder="Enter Postal Code"></input></td>
+            </tr>
+            <tr>
+                <td class="email">Email Address:</td>
+                <td><input type="text" id="add-email" form="add_form" placeholder="Enter Email Address"></input></td>
+            </tr>
+            <tr>
+                <td class="phone">Phone Number:</td>
+                <td><input type="text" id="add-phone" form="add_form" placeholder="Enter Phone Number"></input></td>
             </tr>
         </tbody>
     </table>
-    <button onclick="saveButtonClicked()">Save</button>
-    <button onclick="cancelButtonClicked()">Cancel</button>
 </div>
+
+<div class="btns">
+    <button onclick="saveButtonClicked()" class="saveBtn">Save</button>
+    <button onclick="cancelButtonClicked()" class="cancelBtn">Cancel</button>
+</div>
+
+<script src="client-add.js"></script>
+</body>
