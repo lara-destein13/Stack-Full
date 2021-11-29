@@ -15,3 +15,4 @@ The purpose of Stack Full of Clients is to provide business owners with an organ
 ## Contribution
 Made by Lara DeStein, Benjamin Ramey, Will Rost, and Leigha McKay
 
+
