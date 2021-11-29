@@ -1,12 +1,12 @@
-# Stack-Full
+# Stack Full of Clients
 
 ## Purpose
-The purpose of our app is to provide business owners with an organized list so they can keep track of their clients along with information on how to contact them. Our app also allows users to add and delete clients on their client list.
+The purpose of Stack Full of Clients is to provide business owners with an organized list of their clients along with information on how to contact them. Our app also allows users to add and edit clients.
 
 ## Built With 
 * Express Handlebars
 * CSS 
-* Client and Server Side JavaScript
+* JavaScript
 * Yarn-Lock
 
 ## Website 
