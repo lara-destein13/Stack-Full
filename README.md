@@ -15,3 +15,4 @@ The purpose of our app is to provide business owners with an organized list so t
 ## Contribution
 Made by Lara DeStein, Benjamin Ramey, Will Rost, and Leigha McKay
 
+
