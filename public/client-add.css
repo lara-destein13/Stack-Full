@@ -3,7 +3,6 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: white;
 }
 
 tbody {
@@ -24,6 +23,7 @@ tbody {
   background-color: #748b97;
   border: 1px solid black;
   border-radius: 5px;
+  box-shadow: black 7px 7px 10px;
 }
 
 tr {
@@ -121,7 +121,6 @@ td input {
   text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   height: 40px;
   width: 65px;
-
 }
 
 .saveBtn:hover {
