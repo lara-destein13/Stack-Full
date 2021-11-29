@@ -80,7 +80,6 @@ class WebServer {
   // clientListPage
   //------------------------------------------------------------------------------------------------
   clientListPage(req, res) {
-    console.log(JSON.stringify(this.clients, null, 4));
     const context = {
       clients: this.clients,
     }
@@ -119,17 +118,25 @@ class WebServer {
     newClient.id = this.nextid;
     this.nextid += 1;
     this.clients.push(newClient);
-    res.json({ foo: 'bar' });
+    res.json({ });
   }
 
  //------------------------------------------------------------------------------------------------
   // clientUpdate
   //------------------------------------------------------------------------------------------------
   clientUpdate(req, res) {
-    this.clients.push(req.body);
-    // res.redirect('client-list-page');
-    // res.sendStatus(200);
-    res.json({ foo: 'bar' });
+    const edits = req.body;
+    for (let i = 0; i < this.clients.length; i += 1) {
+      const client = this.clients[i];
+      if (client.id === parseInt(edits.id)) {
+        client.firstName = edits.firstName;
+        client.lastName = edits.lastName;
+        client.postalCode = edits.postalCode;
+        client.email = edits.email;
+        client.phone = edits.phone;
+      }
+    }
+    res.json({ });
   }
 
   //------------------------------------------------------------------------------------------------

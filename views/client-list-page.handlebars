@@ -26,8 +26,8 @@
                     <td class='clientPostal'>{{client.postalCode}}</td>
                     <td class='clientEmail'>{{client.email}}</td>
                     <td class='clientPhone'>{{client.phone}}</td>
-                    <td class='editCell'><button class='editBTN' onclick="editButtonClicked({{@index}})">Edit</button></td>
-                    <td class='deleteCell'><button class='deleteBTN' onclick="editButtonClicked({{@index}})">Delete</button></td>
+                    <td class='editCell'><button class='editBTN' onclick="editButtonClicked({{client.id}})">Edit</button></td>
+                    <td class='deleteCell'><button class='deleteBTN' onclick="editButtonClicked({{client.id}})">Delete</button></td>
                 </tr>
             {{/each}}
         </tbody>

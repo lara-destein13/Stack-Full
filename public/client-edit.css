@@ -46,7 +46,7 @@ td input {
   border-radius: 2px;
 }
 
-.firstName, .lastName, .postalCode, .email, .phone {
+.id, .firstName, .lastName, .postalCode, .email, .phone {
   color: white;
   font-size: 35px;
 }
