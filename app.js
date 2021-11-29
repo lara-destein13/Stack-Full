@@ -58,6 +58,7 @@ class WebServer {
 
     // Register our API endpoints
     this.app.post('/client-save', this.clientSave);
+    this.app.post('/client-update', this.clientUpdate);
     this.app.post('/client-remove', this.clientRemove);
     
     // Start our Express server
@@ -106,6 +107,16 @@ class WebServer {
   // clientSave
   //------------------------------------------------------------------------------------------------
   clientSave(req, res) {
+    this.clients.push(req.body);
+    // res.redirect('client-list-page');
+    // res.sendStatus(200);
+    res.json({ foo: 'bar' });
+  }
+
+ //------------------------------------------------------------------------------------------------
+  // clientUpdate
+  //------------------------------------------------------------------------------------------------
+  clientUpdate(req, res) {
     this.clients.push(req.body);
     // res.redirect('client-list-page');
     // res.sendStatus(200);

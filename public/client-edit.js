@@ -13,7 +13,7 @@ async function saveButtonClicked() {
     phone
   };
 
-  const url = 'http://localhost:3000/client-save';
+  const url = 'http://localhost:3000/client-update';
   
   const options = {
     method: 'POST',
