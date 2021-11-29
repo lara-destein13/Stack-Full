@@ -20,6 +20,7 @@ tbody {
 }
 
 #client-edit table {
+  margin-top: 100px;
   margin-bottom: 10px;
   background-color: #748b97;
   border: 1px solid black;
