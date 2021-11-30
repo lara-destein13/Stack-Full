@@ -16,16 +16,16 @@
                 <th class='info'></th>
             </tr>
         </thead>
-        <tbody  >
+        <tbody id='clientRow'>
             {{#each clients as | client |}}
-                <tr class ='clientData'>
+                <tr class ='clientData' id ='clientData'>
                     <td class='clientFirst'>{{client.firstName}}</td>
                     <td class='clientLast'>{{client.lastName}}</td>
                     <td class='clientPostal'>{{client.postalCode}}</td>
                     <td class='clientEmail'>{{client.email}}</td>
                     <td class='clientPhone'>{{client.phone}}</td>
                     <td class='editCell'><button class='editBTN' onclick="editButtonClicked({{@index}})">Edit</button></td>
-                    <td class='deleteCell'><button class='deleteBTN' onclick="editButtonClicked({{@index}})">Delete</button></td>
+                    <td class='deleteCell'><button class='deleteBTN' id='deleteBTN' onclick="deleteButtonClicked({{@index}})">Delete</button></td>
                 </tr>
             {{/each}}
         </tbody>
