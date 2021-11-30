@@ -26,9 +26,9 @@ body {
   border-bottom: solid rgb(0, 0, 0) 4px;
   color:black;
 }
-.clientFirst, .clientLast, .clientPostal {
+.clientId, .clientFirst, .clientLast, .clientPostal, .clientPhone, .clientEmail{
   text-align: center;
-  font-size: 40px;
+  font-size: 25px;
   position: relative;
   margin-top: 10%;
   color:black;
@@ -37,12 +37,12 @@ body {
   /* border-right: solid rgb(41, 41, 41) 4px; */
   
 }
-.clientPhone, .clientEmail {
+/* .clientPhone, .clientEmail {
   text-align: center;
   font-size: 25px;
   position: relative;
   color:black;
-}
+} */
 /* .clientData {
   border-bottom: solid black 4px;
 } */
