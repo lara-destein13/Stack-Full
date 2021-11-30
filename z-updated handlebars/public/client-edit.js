@@ -1,21 +1,15 @@
 async function saveButtonClicked() {
-  const id = document.getElementById('add-id').value;
   const firstName = document.getElementById('add-first-name').value;
   const lastName = document.getElementById('add-last-name').value;
   const postalCode = document.getElementById('add-postal-code').value;
-  const email = document.getElementById('add-email').value;
-  const phone = document.getElementById('add-phone').value;
 
   const body = {
-    id,
     firstName,
     lastName,
     postalCode,
-    email,
-    phone
   };
 
-  const url = 'http://localhost:3000/client-update';
+  const url = 'http://localhost:3000/client-save';
   
   const options = {
     method: 'POST',

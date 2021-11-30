@@ -15,20 +15,14 @@ class WebServer {
     // Some constants
     this.port = 3000;
 
-    // The context
-    this.clients = [
-      {
-        firstName: 'Lara',
-        lastName: 'DeStein',
-        postalCode: '37774',
-      },
-      {
-        firstName: 'Luna',
-        lastName: 'DeStein',
-        postalCode: '37774',
-      },
-    ];
+    // Each client is assigned a unique id
+    this.nextid = 0;
 
+    // Create a couple clients so we have something to look at in the clients page
+    this.clients = []; 
+    this.newClient('Lara', 'DeStein', '37774', 'laraemail@email.com', '(787) 656-7878'); 
+    this.newClient('Luna', 'DeStein', '37774', 'lunaemail@email.com', '(787) 656-7879'); 
+    
     // Create our Express app
     this.app = express();
     this.app.use(bodyParser.urlencoded({ extended: true }));
@@ -54,6 +48,7 @@ class WebServer {
 
     // Register our API endpoints
     this.app.post('/client-save', this.clientSave);
+    this.app.post('/client-update', this.clientUpdate);
     this.app.post('/client-remove', this.clientRemove);
     
     // Start our Express server
@@ -91,6 +86,23 @@ class WebServer {
     res.render('client-list-page', context);
   }
 
+//------------------------------------------------------------------------------------------------
+  // newClient
+  //------------------------------------------------------------------------------------------------
+  newClient(firstName, lastName, postalCode, email, phone) {
+    var newClient = {
+      firstName,
+      lastName,
+      postalCode,
+      email,
+      phone,
+      id: this.nextid,
+    };
+    
+    this.nextid += 1;
+    this.clients.push(newClient);
+  }
+
   //------------------------------------------------------------------------------------------------
   // clientRemove
   //------------------------------------------------------------------------------------------------
@@ -102,17 +114,36 @@ class WebServer {
   // clientSave
   //------------------------------------------------------------------------------------------------
   clientSave(req, res) {
-    this.clients.push(req.body);
-    // res.redirect('client-list-page');
-    // res.sendStatus(200);
-    res.json({ foo: 'bar' });
+    var newClient = req.body;
+    newClient.id = this.nextid;
+    this.nextid += 1;
+    this.clients.push(newClient);
+    res.json({ });
+  }
+
+ //------------------------------------------------------------------------------------------------
+  // clientUpdate
+  //------------------------------------------------------------------------------------------------
+  clientUpdate(req, res) {
+    const edits = req.body;
+    for (let i = 0; i < this.clients.length; i += 1) {
+      const client = this.clients[i];
+      if (client.id === parseInt(edits.id)) {
+        client.firstName = edits.firstName;
+        client.lastName = edits.lastName;
+        client.postalCode = edits.postalCode;
+        client.email = edits.email;
+        client.phone = edits.phone;
+      }
+    }
+    res.json({ });
   }
 
   //------------------------------------------------------------------------------------------------
   // loginPage
   //------------------------------------------------------------------------------------------------
   loginPage(req, res) {
-    const context = {};
+    const context = {layout:false};
     res.render('login-page', context);
   }
 }

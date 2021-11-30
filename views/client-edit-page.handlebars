@@ -1,5 +1,5 @@
-<script src="client-edit.js"></script>
-
+<body>
+    
 <h1>Client Edit Page</h1>
 
 <form method="GET" id="edit_form"></form>
@@ -8,19 +8,37 @@
     <table>
         <tbody>
             <tr>
-                <td>First Name</td>
+                <td class="id">ID:</td>
+                <td><input type="text" value="{{client.id}}" id="add-id" form="edit_form" readonly></input></td>
+            </tr>
+            <tr>
+                <td class="firstName">First Name:</td>
                 <td><input type="text" value="{{client.firstName}}" id="add-first-name" form="edit_form"></input></td>
             </tr>
             <tr>
-                <td>Last Name</td>
+                <td class="lastName">Last Name:</td>
                 <td><input type="text" value="{{client.lastName}}" id="add-last-name" form="edit_form"></input></td>
             </tr>
             <tr>
-                <td>Postal Code</td>
+                <td class="postalCode">Postal Code:</td>
                 <td><input type="text" value="{{client.postalCode}}" id="add-postal-code" form="edit_form"></input></td>
+            </tr>
+            <tr>
+                <td class="email">Email Address:</td>
+                <td><input type="text" value="{{client.email}}" id="add-email" form="add_form"></input></td>
+            </tr>
+            <tr>
+                <td class="phone">Phone Number:</td>
+                <td><input type="text" value="{{client.phone}}" id="add-phone" form="add_form"></input></td>
             </tr>
         </tbody>
     </table>
-    <button onclick="saveButtonClicked()">Save</button>
-    <button onclick="cancelButtonClicked()">Cancel</button>
  </div>
+
+ <div class="btns">
+    <button onclick="saveButtonClicked()" class="saveBtn">Save</button>
+    <button onclick="cancelButtonClicked()" class="cancelBtn">Cancel</button>
+</div>
+
+ <script src="client-edit.js"></script>
+ </body>
