@@ -4,18 +4,19 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/laradestein/handlebars.git"
+    "url": "git+https://github.com/lara-destein13/Stack-Full.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/laradestein/handlebars/issues"
+    "url": "https://github.com/lara-destein13/Stack-Full/issues"
   },
-  "homepage": "https://github.com/laradestein/handlebars#readme",
+  "homepage": "https://github.com/lara-destein13/Stack-Full#readme",
   "dependencies": {
     "auto-bind": "4.0.0",
     "express": "^4.17.1",
