@@ -28,31 +28,31 @@ class WebServer {
     
     // Create our Express app
     /* this.app = express(); */
-    this.app.use(bodyParser.urlencoded({ extended: true }));
-    this.app.use(bodyParser.json());
-    this.app.use(bodyParser.raw());
+    app.use(bodyParser.urlencoded({ extended: true }));
+    app.use(bodyParser.json());
+    app.use(bodyParser.raw());
 
     // Create our handlebars instance
     this.handlebars = handlebars.create({});
 
     // Configure our Express app to use handlebars
-    this.app.engine("handlebars", this.handlebars.engine);
-    this.app.set("view engine", "handlebars");
-    this.app.set('views', './views');
+    app.engine("handlebars", this.handlebars.engine);
+    app.set("view engine", "handlebars");
+    app.set('views', './views');
 
     // Tell express where to find our static css and js files
-    this.app.use(express.static(path.join(__dirname, 'public')));
+    app.use(express.static(path.join(__dirname, 'public')));
 
     // Register our HTML endpoints
-    this.app.get('/', this.loginPage);
-    this.app.get('/api/client-list-page', this.clientListPage);
-    this.app.get('/api/client-add-page', this.clientAddPage);
-    this.app.get('/api/client-edit-page', this.clientEditPage);
+    app.get('/', this.loginPage);
+    app.get('/api/client-list-page', this.clientListPage);
+    app.get('/api/client-add-page', this.clientAddPage);
+    app.get('/api/client-edit-page', this.clientEditPage);
 
     // Register our API endpoints
-    this.app.post('/client-save', this.clientSave);
-    this.app.post('/client-update', this.clientUpdate);
-    this.app.post('/client-remove', this.clientRemove);
+    app.post('/client-save', this.clientSave);
+    app.post('/client-update', this.clientUpdate);
+    app.post('/client-remove', this.clientRemove);
     
     // Start our Express server
     app.listen(PORT, () => {
