@@ -7,7 +7,7 @@ The purpose of Stack Full of Clients is to provide business owners with an organ
 * Express Handlebars
 * CSS 
 * JavaScript
-* Yarn-Lock
+* Node.js
 
 ## Website 
 https://damp-gorge-70879.herokuapp.com
