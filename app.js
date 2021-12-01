@@ -102,8 +102,8 @@ class WebServer {
       id: this.nextid,
     };
     
-    this.nextid += 1;
-    this.clients.push(newClient);
+    nextid += 1;
+    clients.push(newClient);
   }
 
   //------------------------------------------------------------------------------------------------
