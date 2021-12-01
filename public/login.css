@@ -1,6 +1,10 @@
 /* #client-add table {
     background-color: lightblue;
 } */
+body {
+    background-image: url('./graphics/Project\ 2\ BG.jpg');
+}
+
 h1 {
     display: flex;
     flex-direction: column;
