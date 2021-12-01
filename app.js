@@ -45,9 +45,9 @@ class WebServer {
 
     // Register our HTML endpoints
     app.get('/', this.loginPage);
-    app.get('/api/client-list-page', this.clientListPage);
-    app.get('/api/client-add-page', this.clientAddPage);
-    app.get('/api/client-edit-page', this.clientEditPage);
+    app.get('/client-list-page', this.clientListPage);
+    app.get('/client-add-page', this.clientAddPage);
+    app.get('/client-edit-page', this.clientEditPage);
 
     // Register our API endpoints
     app.post('/client-save', this.clientSave);
