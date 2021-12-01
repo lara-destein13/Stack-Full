@@ -65,7 +65,7 @@ class WebServer {
   //------------------------------------------------------------------------------------------------
   clientAddPage(req, res) {
     const context = {};
-    res.render('client-add-page', context);
+    res.render('/client-add-page', context);
   }
 
   //------------------------------------------------------------------------------------------------
@@ -76,7 +76,7 @@ class WebServer {
     const context = {
       client: this.clients[index],
     }
-    res.render('client-edit-page', context);
+    res.render('/client-edit-page', context);
   }
 
   //------------------------------------------------------------------------------------------------
@@ -86,7 +86,7 @@ class WebServer {
     const context = {
       clients: this.clients,
     }
-    res.render('client-list-page', context);
+    res.render('/client-list-page', context);
   }
 
 //------------------------------------------------------------------------------------------------
