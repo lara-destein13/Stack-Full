@@ -5,7 +5,8 @@ const handlebars = require('express-handlebars');
 const path = require('path');
 const util = require('util');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
+const app = express();
 
 class WebServer {
   //------------------------------------------------------------------------------------------------
@@ -15,7 +16,7 @@ class WebServer {
     autoBind(this);
     
     // Some constants
-    /* this.PORT = 3000; */
+    /* this.port = 3000; */
 
     // Each client is assigned a unique id
     this.nextid = 0;
@@ -26,7 +27,7 @@ class WebServer {
     this.newClient('Luna', 'DeStein', '37774', 'lunaemail@email.com', '(787) 656-7879'); 
     
     // Create our Express app
-    this.app = express();
+    /* this.app = express(); */
     this.app.use(bodyParser.urlencoded({ extended: true }));
     this.app.use(bodyParser.json());
     this.app.use(bodyParser.raw());
@@ -44,9 +45,9 @@ class WebServer {
 
     // Register our HTML endpoints
     this.app.get('/', this.loginPage);
-    this.app.get('/client-list-page', this.clientListPage);
-    this.app.get('/client-add-page', this.clientAddPage);
-    this.app.get('/client-edit-page', this.clientEditPage);
+    this.app.get('/api/client-list-page', this.clientListPage);
+    this.app.get('/api/client-add-page', this.clientAddPage);
+    this.app.get('/api/client-edit-page', this.clientEditPage);
 
     // Register our API endpoints
     this.app.post('/client-save', this.clientSave);
@@ -54,9 +55,9 @@ class WebServer {
     this.app.post('/client-remove', this.clientRemove);
     
     // Start our Express server
-    this.app.listen(this.PORT, () => {
-      console.log(`WebServer listening at http://localhost:${PORT}`)
-    })
+    app.listen(PORT, () => {
+      console.log(`API server now on port ${PORT}!`);
+    });
   }
 
   //------------------------------------------------------------------------------------------------
