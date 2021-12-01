@@ -5,6 +5,8 @@ const handlebars = require('express-handlebars');
 const path = require('path');
 const util = require('util');
 
+const PORT = process.env.PORT || 3000;
+
 class WebServer {
   //------------------------------------------------------------------------------------------------
   // constructor
@@ -13,7 +15,7 @@ class WebServer {
     autoBind(this);
     
     // Some constants
-    this.port = 3000;
+    /* this.PORT = 3000; */
 
     // Each client is assigned a unique id
     this.nextid = 0;
@@ -52,8 +54,8 @@ class WebServer {
     this.app.post('/client-remove', this.clientRemove);
     
     // Start our Express server
-    this.app.listen(this.port, () => {
-      console.log(`WebServer listening at http://localhost:${this.port}`)
+    this.app.listen(this.PORT, () => {
+      console.log(`WebServer listening at http://localhost:${PORT}`)
     })
   }
 
