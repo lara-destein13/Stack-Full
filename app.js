@@ -5,7 +5,7 @@ const handlebars = require('express-handlebars');
 const path = require('path');
 const util = require('util');
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 class WebServer {
