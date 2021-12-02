@@ -36,3 +36,6 @@ function cancelButtonClicked() {
   window.location='/client-list-page';
 }
 
+  // const url = 'http://localhost:3000/client-edit';
+  const url = `${window.expressUrl}/client-edit`;
+  
