@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const handlebars = require('express-handlebars');
 const path = require('path');
+const process = require('process');
 const util = require('util');
 
 const PORT = process.env.PORT || 3000;
@@ -20,6 +21,13 @@ class WebServer {
 
     // Each client is assigned a unique id
     this.nextid = 0;
+
+    // 
+    if (process.platform === "darwin") {
+      this.expressUrl = "http://localhost:3000";
+    } else {
+      this.expressUrl  = "https://damp-gorge-70879.herokuapp.com";
+    }
 
     // Create a couple clients so we have something to look at in the clients page
     this.clients = []; 
@@ -64,7 +72,9 @@ class WebServer {
   // clientAddPage
   //------------------------------------------------------------------------------------------------
   clientAddPage(req, res) {
-    const context = {};
+    const context = {
+      expressUrl: this.expressUrl,
+    };
     res.render('client-add-page', context);
   }
 
@@ -75,6 +85,7 @@ class WebServer {
     const index = req.query.index;
     const context = {
       client: this.clients[index],
+      expressUrl: this.expressUrl,
     }
     res.render('client-edit-page', context);
   }
@@ -85,6 +96,7 @@ class WebServer {
   clientListPage(req, res) {
     const context = {
       clients: this.clients,
+      expressUrl: this.expressUrl,
     }
     res.render('client-list-page', context);
   }
@@ -146,7 +158,10 @@ class WebServer {
   // loginPage
   //------------------------------------------------------------------------------------------------
   loginPage(req, res) {
-    const context = {layout:false};
+    const context = {
+      expressUrl: this.expressUrl,
+      layout:false,
+    };
     res.render('login-page', context);
   }
 }

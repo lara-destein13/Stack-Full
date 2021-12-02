@@ -6,6 +6,9 @@ function addButtonClicked(index) {
   window.location='/client-add-page';
 }
 
+// const url = 'http://localhost:3000/client-list';
+const url = `${window.expressUrl}/client-list`;
+
 // let addToDoButton = document.getElementById(‘addToDo’);
 // let toDoContainer = document.getElementById(‘toDoContainer’);
 // let inputField = document.getElementById(‘inputField’);
